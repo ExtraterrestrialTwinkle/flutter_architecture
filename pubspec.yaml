@@ -37,10 +37,15 @@ dependencies:
   cupertino_icons: ^1.0.2
   module_business:
     path: packages/module_business
+  get_it: ^7.6.0
+  injectable: ^2.1.2
+  integer: ^2.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  injectable_generator: ^2.1.6
+  build_runner: ^2.4.4
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

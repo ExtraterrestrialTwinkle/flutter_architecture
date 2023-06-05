@@ -1,7 +1,16 @@
 library module_business;
+import 'package:get_it/get_it.dart';
+import 'package:module_data/module_data.dart';
+import 'package:injectable/injectable.dart';
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+import 'module_business.config.dart';
+
+@InjectableInit(
+    initializerName: r'$initGetIt',
+    preferRelativeImports: true,
+    asExtension: false
+)
+void initializeBlocs(){
+  initializeServices();
+  $initGetIt(GetIt.I);
 }

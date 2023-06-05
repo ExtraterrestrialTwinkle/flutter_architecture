@@ -1,3 +1,4 @@
-abstract class SomethingService {
 
+abstract class SomethingService {
+  void doSomething(int arg);
 }
