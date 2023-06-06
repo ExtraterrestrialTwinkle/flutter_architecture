@@ -1,16 +1,7 @@
 # flutter_architecture
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Создайте пустой проект, используя принципы Clean Architecture.
+Создайте фейковый сервис на сервисном слое, зарегистрируйте его в сервис-локаторе (например, GetIt, но необязательно) и получите его на бизнес-слое через локатор.
+Подключите Freezed и создайте доменную модель с помощью этой библиотеки.
+По желанию, усложнённое. Реализуйте собственный генератор кода (с использованием build runner или без, неважно).
+Настройте статический анализатор, подключите dart_code_metrics, проведите анализ и соберите метрики с собственного кода.
