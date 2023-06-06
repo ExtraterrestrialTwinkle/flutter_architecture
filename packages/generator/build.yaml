@@ -1,0 +1,15 @@
+targets:
+  $default:
+    builders:
+      generator:
+        enabled: true
+
+builders:
+  generator:
+    target: ";generator"
+    import: "package:generator/methods_builder.dart"
+    builder_factories: ["methodsBuilder"]
+    build_extensions: {".dart": [".methods_builder.dart"]}
+    auto_apply: dependents
+    build_to: source
+    applies_builders: ["source_gen|combining_builders"]
